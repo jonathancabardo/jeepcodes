@@ -1,0 +1,18 @@
+JeepCodes 2.0 - SYNTHETIC classroom data
+Workbook: C:\Users\noname\Documents\DIT\DIT837-EmergingTech\JeepCodes\JeepCodes_2_AI_Route_Challenge.xlsx
+SHA-256: ba2ae447d1964e5bd0d2d92d89d98b837be28b40a81f9ad1720b5078391eccbf
+Stops: 18
+Services: 15
+Source service segments: 60
+Directed adjacency entries: 120
+Baseline search: Alpha -> Alpha
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 0; effective budget: PHP 0
+Zero-leg trip: no boarding or travel costs; no alternatives are needed.
+Recommendation: Alpha
+  Fare PHP 0.000000; minutes 0.000000; synthetic risk 0.000000; transfers 0; balanced score 0.000000000
+  Fare breakdown: boarding 0 + segments 0 + transfers 0
+  Minutes breakdown: driving 0 + arrivals 0 + transfers 0
+  Score parts (time, fare, risk, transfers): 0.000000000, 0.000000000, 0.000000000, 0.000000000
+Expanded path labels: 0

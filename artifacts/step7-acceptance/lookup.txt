@@ -1,0 +1,8 @@
+JeepCodes 2.0 - SYNTHETIC classroom data
+Workbook: C:\Users\noname\Documents\DIT\DIT837-EmergingTech\JeepCodes\JeepCodes_2_AI_Route_Challenge.xlsx
+SHA-256: ba2ae447d1964e5bd0d2d92d89d98b837be28b40a81f9ad1720b5078391eccbf
+Stops: 18
+Services: 15
+Source service segments: 60
+Directed adjacency entries: 120
+01A: Alpha -> Bravo -> Charlie -> Echo -> Golf

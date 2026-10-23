@@ -1,0 +1,202 @@
+Step 5 - SYNTHETIC classroom ML-assisted routing comparison
+Source SHA-256: ba2ae447d1964e5bd0d2d92d89d98b837be28b40a81f9ad1720b5078391eccbf; model SHA-256: 06a8b0f80d0ad44fb1719661bcca31e5ae37d6cdcfaa615b3976bcacbe784b2a
+Matched time period: midday; deterministic period factor: 1.05
+ML uses the condition-specific prediction once; shared access/transfer costs are then added.
+Normal S1 / deterministic: Alpha -> Romeo
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 34.000000; minutes 81.162500; synthetic risk 23.800000; transfers 2; balanced score 0.623141667
+  Fare breakdown: boarding 5 + segments 19 + transfers 10
+  Minutes breakdown: driving 61.1625 + arrivals 6 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.270541667, 0.255000000, 0.047600000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 7.245, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17.45, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.2825, risk 5.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 23.015, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.09, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.08, risk 7.6
+Alternative 1: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 38.000000; minutes 88.360000; synthetic risk 21.800000; transfers 3; balanced score 0.698133333
+  Fare breakdown: boarding 5 + segments 18 + transfers 15
+  Minutes breakdown: driving 66.36 + arrivals 6 + transfers 16
+  Score parts (time, fare, risk, transfers): 0.294533333, 0.285000000, 0.043600000, 0.075000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 7.245, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17.45, risk 2.2
+    Hotel -> Juliet: 10H (EDGE COSTS row 35); fare 8, minutes 22.48, risk 3.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 23.015, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.09, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.08, risk 7.6
+Alternative 2: Alpha -> Delta -> Hotel -> Juliet -> November -> Oscar -> Quebec -> Romeo
+  Fare PHP 39.000000; minutes 93.667500; synthetic risk 29.600000; transfers 2; balanced score 0.713925000
+  Fare breakdown: boarding 5 + segments 24 + transfers 10
+  Minutes breakdown: driving 69.6675 + arrivals 10 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.312225000, 0.292500000, 0.059200000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 7.245, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17.45, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.2825, risk 5.1
+    Juliet -> November: 42D (EDGE COSTS row 58); fare 9, minutes 23.12, risk 4.8
+    November -> Oscar: 42D (EDGE COSTS row 59); fare 5, minutes 14.55, risk 7.3
+    Oscar -> Quebec: 42D (EDGE COSTS row 60); fare 2, minutes 5.83, risk 2.2
+    Quebec -> Romeo: 42D (EDGE COSTS row 61); fare 3, minutes 10.19, risk 5.6
+Expanded path labels: 2445
+Normal S1 / ML-assisted: Alpha -> Romeo
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 34.000000; minutes 80.343191; synthetic risk 23.800000; transfers 2; balanced score 0.620410637
+  Fare breakdown: boarding 5 + segments 19 + transfers 10
+  Minutes breakdown: driving 60.3432 + arrivals 6 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.267810637, 0.255000000, 0.047600000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 7.33576, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17.4789, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.0073, risk 5.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 21.7384, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.64879, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.1342, risk 7.6
+Alternative 1: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 38.000000; minutes 86.299675; synthetic risk 21.800000; transfers 3; balanced score 0.691265582
+  Fare breakdown: boarding 5 + segments 18 + transfers 15
+  Minutes breakdown: driving 64.2997 + arrivals 6 + transfers 16
+  Score parts (time, fare, risk, transfers): 0.287665582, 0.285000000, 0.043600000, 0.075000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 7.33576, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17.4789, risk 2.2
+    Hotel -> Juliet: 10H (EDGE COSTS row 35); fare 8, minutes 20.9637, risk 3.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 21.7384, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.64879, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.1342, risk 7.6
+Alternative 2: Alpha -> Delta -> Hotel -> Juliet -> November -> Oscar -> Quebec -> Romeo
+  Fare PHP 39.000000; minutes 94.049943; synthetic risk 29.600000; transfers 2; balanced score 0.715199811
+  Fare breakdown: boarding 5 + segments 24 + transfers 10
+  Minutes breakdown: driving 70.0499 + arrivals 10 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.313499811, 0.292500000, 0.059200000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 7.33576, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17.4789, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.0073, risk 5.1
+    Juliet -> November: 42D (EDGE COSTS row 58); fare 9, minutes 23.0826, risk 4.8
+    November -> Oscar: 42D (EDGE COSTS row 59); fare 5, minutes 15.0207, risk 7.3
+    Oscar -> Quebec: 42D (EDGE COSTS row 60); fare 2, minutes 5.86376, risk 2.2
+    Quebec -> Romeo: 42D (EDGE COSTS row 61); fare 3, minutes 10.2611, risk 5.6
+Expanded path labels: 2458
+Deterministic vs ML / Normal S1
+Comparison route 1: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 06B; Juliet->November on 20A; November->Papa on 20A; Papa->Romeo on 20A
+  Before: minutes 81.162500; fare PHP 34; risk 23.800000; transfers 2; score 0.623141667
+  After: minutes 80.343191; fare PHP 34; risk 23.800000; transfers 2; score 0.620410637
+  Change (after - before): minutes -0.819309; fare +0; risk +0.000000; transfers +0; score -0.002731030
+Comparison route 2: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 10H; Juliet->November on 20A; November->Papa on 20A; Papa->Romeo on 20A
+  Before: minutes 88.360000; fare PHP 38; risk 21.800000; transfers 3; score 0.698133333
+  After: minutes 86.299675; fare PHP 38; risk 21.800000; transfers 3; score 0.691265582
+  Change (after - before): minutes -2.060325; fare +0; risk +0.000000; transfers +0; score -0.006867751
+Comparison route 3: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 06B; Juliet->November on 42D; November->Oscar on 42D; Oscar->Quebec on 42D; Quebec->Romeo on 42D
+  Before: minutes 93.667500; fare PHP 39; risk 29.600000; transfers 2; score 0.713925000
+  After: minutes 94.049943; fare PHP 39; risk 29.600000; transfers 2; score 0.715199811
+  Change (after - before): minutes +0.382443; fare +0; risk +0.000000; transfers +0; score +0.001274811
+Explanation: Recommendation unchanged. Baseline winner: 81.16 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.623141667. Original winner under S1 ML: 80.34 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.620410637. Current winner: 80.34 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.620410637. Balanced is the active objective; lower values rank first. Alternative 1: 86.30 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.691265582; its primary value 0.691265582 is higher than 0.620410637. Alternative 2: 94.05 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.715199811; its primary value 0.715199811 is higher than 0.620410637. 
+Delta S3 / deterministic: Alpha -> Romeo
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 34.000000; minutes 106.205000; synthetic risk 23.800000; transfers 2; balanced score 0.706616667
+  Fare breakdown: boarding 5 + segments 19 + transfers 10
+  Minutes breakdown: driving 86.205 + arrivals 6 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.354016667, 0.255000000, 0.047600000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 18.1125, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 31.625, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.2825, risk 5.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 23.015, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.09, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.08, risk 7.6
+Alternative 1: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 38.000000; minutes 113.402500; synthetic risk 21.800000; transfers 3; balanced score 0.781608333
+  Fare breakdown: boarding 5 + segments 18 + transfers 15
+  Minutes breakdown: driving 91.4025 + arrivals 6 + transfers 16
+  Score parts (time, fare, risk, transfers): 0.378008333, 0.285000000, 0.043600000, 0.075000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 18.1125, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 31.625, risk 2.2
+    Hotel -> Juliet: 10H (EDGE COSTS row 35); fare 8, minutes 22.48, risk 3.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 23.015, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.09, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.08, risk 7.6
+Alternative 2: Alpha -> Delta -> Hotel -> Juliet -> November -> Oscar -> Quebec -> Romeo
+  Fare PHP 39.000000; minutes 118.710000; synthetic risk 29.600000; transfers 2; balanced score 0.797400000
+  Fare breakdown: boarding 5 + segments 24 + transfers 10
+  Minutes breakdown: driving 94.71 + arrivals 10 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.395700000, 0.292500000, 0.059200000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 18.1125, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 31.625, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.2825, risk 5.1
+    Juliet -> November: 42D (EDGE COSTS row 58); fare 9, minutes 23.12, risk 4.8
+    November -> Oscar: 42D (EDGE COSTS row 59); fare 5, minutes 14.55, risk 7.3
+    Oscar -> Quebec: 42D (EDGE COSTS row 60); fare 2, minutes 5.83, risk 2.2
+    Quebec -> Romeo: 42D (EDGE COSTS row 61); fare 3, minutes 10.19, risk 5.6
+Expanded path labels: 2384
+Delta S3 / ML-assisted: Alpha -> Romeo
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 34.000000; minutes 105.111492; synthetic risk 23.800000; transfers 2; balanced score 0.702971640
+  Fare breakdown: boarding 5 + segments 19 + transfers 10
+  Minutes breakdown: driving 85.1115 + arrivals 6 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.350371640, 0.255000000, 0.047600000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 18.086, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 31.4969, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.0073, risk 5.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 21.7384, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.64879, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.1342, risk 7.6
+Alternative 1: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 38.000000; minutes 111.067976; synthetic risk 21.800000; transfers 3; balanced score 0.773826585
+  Fare breakdown: boarding 5 + segments 18 + transfers 15
+  Minutes breakdown: driving 89.068 + arrivals 6 + transfers 16
+  Score parts (time, fare, risk, transfers): 0.370226585, 0.285000000, 0.043600000, 0.075000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 18.086, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 31.4969, risk 2.2
+    Hotel -> Juliet: 10H (EDGE COSTS row 35); fare 8, minutes 20.9637, risk 3.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 21.7384, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 6.64879, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 12.1342, risk 7.6
+Alternative 2: Alpha -> Delta -> Hotel -> Juliet -> November -> Oscar -> Quebec -> Romeo
+  Fare PHP 39.000000; minutes 118.818244; synthetic risk 29.600000; transfers 2; balanced score 0.797760813
+  Fare breakdown: boarding 5 + segments 24 + transfers 10
+  Minutes breakdown: driving 94.8182 + arrivals 10 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.396060813, 0.292500000, 0.059200000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 18.086, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 31.4969, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 15.0073, risk 5.1
+    Juliet -> November: 42D (EDGE COSTS row 58); fare 9, minutes 23.0826, risk 4.8
+    November -> Oscar: 42D (EDGE COSTS row 59); fare 5, minutes 15.0207, risk 7.3
+    Oscar -> Quebec: 42D (EDGE COSTS row 60); fare 2, minutes 5.86376, risk 2.2
+    Quebec -> Romeo: 42D (EDGE COSTS row 61); fare 3, minutes 10.2611, risk 5.6
+Expanded path labels: 2387
+Deterministic vs ML / Delta S3
+Comparison route 1: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 06B; Juliet->November on 20A; November->Papa on 20A; Papa->Romeo on 20A
+  Before: minutes 106.205000; fare PHP 34; risk 23.800000; transfers 2; score 0.706616667
+  After: minutes 105.111492; fare PHP 34; risk 23.800000; transfers 2; score 0.702971640
+  Change (after - before): minutes -1.093508; fare +0; risk +0.000000; transfers +0; score -0.003645027
+Comparison route 2: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 10H; Juliet->November on 20A; November->Papa on 20A; Papa->Romeo on 20A
+  Before: minutes 113.402500; fare PHP 38; risk 21.800000; transfers 3; score 0.781608333
+  After: minutes 111.067976; fare PHP 38; risk 21.800000; transfers 3; score 0.773826585
+  Change (after - before): minutes -2.334524; fare +0; risk +0.000000; transfers +0; score -0.007781748
+Comparison route 3: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 06B; Juliet->November on 42D; November->Oscar on 42D; Oscar->Quebec on 42D; Quebec->Romeo on 42D
+  Before: minutes 118.710000; fare PHP 39; risk 29.600000; transfers 2; score 0.797400000
+  After: minutes 118.818244; fare PHP 39; risk 29.600000; transfers 2; score 0.797760813
+  Change (after - before): minutes +0.108244; fare +0; risk +0.000000; transfers +0; score +0.000360813
+Explanation: Recommendation unchanged. Baseline winner: 106.20 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.706616667. Original winner under S3 ML: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Current winner: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Balanced is the active objective; lower values rank first. Alternative 1: 111.07 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.773826585; its primary value 0.773826585 is higher than 0.702971640. Alternative 2: 118.82 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.797760813; its primary value 0.797760813 is higher than 0.702971640. 
+Deterministic normal-to-Delta: Recommendation unchanged. Baseline winner: 81.16 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.623141667. Original winner under S3 deterministic: 106.20 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.706616667. Current winner: 106.20 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.706616667. Balanced is the active objective; lower values rank first. Alternative 1: 113.40 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.781608333; its primary value 0.781608333 is higher than 0.706616667. Alternative 2: 118.71 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.797400000; its primary value 0.797400000 is higher than 0.706616667. 
+ML normal-to-Delta: Recommendation unchanged. Baseline winner: 80.34 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.620410637. Original winner under S3 ML: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Current winner: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Balanced is the active objective; lower values rank first. Alternative 1: 111.07 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.773826585; its primary value 0.773826585 is higher than 0.702971640. Alternative 2: 118.82 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.797760813; its primary value 0.797760813 is higher than 0.702971640. 
+Winner metric changes / normal_deterministic_vs_ml: {'minutes': -0.8193089744240041, 'fare': 0.0, 'risk': 0.0, 'transfers': 0, 'score': -0.0027310299147466077}
+Winner metric changes / delta_deterministic_vs_ml: {'minutes': -1.0935081136456972, 'fare': 0.0, 'risk': 0.0, 'transfers': 0, 'score': -0.003645027045485638}
+Winner metric changes / deterministic_normal_vs_delta: {'minutes': 25.042500000000004, 'fare': 0.0, 'risk': 0.0, 'transfers': 0, 'score': 0.08347500000000008}
+Winner metric changes / ml_normal_vs_delta: {'minutes': 24.76830086077831, 'fare': 0.0, 'risk': 0.0, 'transfers': 0, 'score': 0.08256100286926105}
+Limitation: Predictions are learned from synthetic classroom data, not real traffic.
+Limitation: ML-vs-deterministic deltas compare estimates; they are not measured time savings.
+Limitation: The Step 4 holdout model is reused unchanged; no retraining or new accuracy claim.
+Limitation: An ML Delta prediction need not be exactly 2.5 times its normal prediction.

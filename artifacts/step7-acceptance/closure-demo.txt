@@ -1,0 +1,96 @@
+JeepCodes 2.0 - SYNTHETIC classroom data
+Workbook: C:\Users\noname\Documents\DIT\DIT837-EmergingTech\JeepCodes\JeepCodes_2_AI_Route_Challenge.xlsx
+SHA-256: ba2ae447d1964e5bd0d2d92d89d98b837be28b40a81f9ad1720b5078391eccbf
+Stops: 18
+Services: 15
+Source service segments: 60
+Directed adjacency entries: 120
+Stored baseline search: Foxtrot -> Golf
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Foxtrot -> Golf
+  Fare PHP 7.000000; minutes 7.800000; synthetic risk 3.700000; transfers 0; balanced score 0.085900000
+  Fare breakdown: boarding 5 + segments 2 + transfers 0
+  Minutes breakdown: driving 4.8 + arrivals 3 + transfers 0
+  Score parts (time, fare, risk, transfers): 0.026000000, 0.052500000, 0.007400000, 0.000000000
+    Foxtrot -> Golf: 02B (EDGE COSTS row 9); fare 7, minutes 7.8, risk 3.7
+Alternative 1: Foxtrot -> Golf
+  Fare PHP 8.000000; minutes 7.800000; synthetic risk 2.700000; transfers 0; balanced score 0.091400000
+  Fare breakdown: boarding 5 + segments 3 + transfers 0
+  Minutes breakdown: driving 4.8 + arrivals 3 + transfers 0
+  Score parts (time, fare, risk, transfers): 0.026000000, 0.060000000, 0.005400000, 0.000000000
+    Foxtrot -> Golf: 11A (EDGE COSTS row 38); fare 8, minutes 7.8, risk 2.7
+Alternative 2: Foxtrot -> Golf
+  Fare PHP 9.000000; minutes 9.000000; synthetic risk 4.700000; transfers 0; balanced score 0.106900000
+  Fare breakdown: boarding 5 + segments 4 + transfers 0
+  Minutes breakdown: driving 6 + arrivals 3 + transfers 0
+  Score parts (time, fare, risk, transfers): 0.030000000, 0.067500000, 0.009400000, 0.000000000
+    Foxtrot -> Golf: 11B (EDGE COSTS row 42); fare 9, minutes 9, risk 4.7
+Expanded path labels: 6
+Scenario S2: Foxtrot -> Golf
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Foxtrot -> Hotel -> Golf
+  Fare PHP 14.000000; minutes 23.000000; synthetic risk 3.900000; transfers 1; balanced score 0.214466667
+  Fare breakdown: boarding 5 + segments 4 + transfers 5
+  Minutes breakdown: driving 18 + arrivals 3 + transfers 2
+  Score parts (time, fare, risk, transfers): 0.076666667, 0.105000000, 0.007800000, 0.025000000
+    Foxtrot -> Hotel: 03C (EDGE COSTS row 12); fare 7, minutes 6.4, risk 2.2
+    Hotel -> Golf: 10C (EDGE COSTS row 31); fare 7, minutes 16.6, risk 1.7
+Alternative 1: Foxtrot -> Hotel -> Golf
+  Fare PHP 14.000000; minutes 29.650000; synthetic risk 1.900000; transfers 1; balanced score 0.232633333
+  Fare breakdown: boarding 5 + segments 4 + transfers 5
+  Minutes breakdown: driving 24.65 + arrivals 3 + transfers 2
+  Score parts (time, fare, risk, transfers): 0.098833333, 0.105000000, 0.003800000, 0.025000000
+    Foxtrot -> Hotel: 10H (EDGE COSTS row 34); fare 7, minutes 13.05, risk 0.2
+    Hotel -> Golf: 10C (EDGE COSTS row 31); fare 7, minutes 16.6, risk 1.7
+Alternative 2: Foxtrot -> Echo -> Golf
+  Fare PHP 18.000000; minutes 27.050000; synthetic risk 6.500000; transfers 1; balanced score 0.263166667
+  Fare breakdown: boarding 5 + segments 8 + transfers 5
+  Minutes breakdown: driving 20.05 + arrivals 4 + transfers 3
+  Score parts (time, fare, risk, transfers): 0.090166667, 0.135000000, 0.013000000, 0.025000000
+    Foxtrot -> Echo: 04A (EDGE COSTS row 16); fare 8, minutes 8, risk 4.8
+    Echo -> Golf: 01A (EDGE COSTS row 5); fare 10, minutes 19.05, risk 1.7
+Expanded path labels: 39
+Before/after comparison: S1 -> S2
+Comparison route 1: Foxtrot->Golf on 02B
+  Before: minutes 7.800000; fare PHP 7; risk 3.700000; transfers 0; score 0.085900000
+  After: unavailable - The leg must be an OPEN service segment in this network.
+Comparison route 2: Foxtrot->Golf on 11A
+  Before: minutes 7.800000; fare PHP 8; risk 2.700000; transfers 0; score 0.091400000
+  After: unavailable - The leg must be an OPEN service segment in this network.
+Comparison route 3: Foxtrot->Golf on 11B
+  Before: minutes 9.000000; fare PHP 9; risk 4.700000; transfers 0; score 0.106900000
+  After: unavailable - The leg must be an OPEN service segment in this network.
+Comparison route 4: Foxtrot->Hotel on 03C; Hotel->Golf on 10C
+  Before: minutes 23.000000; fare PHP 14; risk 3.900000; transfers 1; score 0.214466667
+  After: minutes 23.000000; fare PHP 14; risk 3.900000; transfers 1; score 0.214466667
+  Change (after - before): minutes +0.000000; fare +0; risk +0.000000; transfers +0; score +0.000000000
+Comparison route 5: Foxtrot->Hotel on 10H; Hotel->Golf on 10C
+  Before: minutes 29.650000; fare PHP 14; risk 1.900000; transfers 1; score 0.232633333
+  After: minutes 29.650000; fare PHP 14; risk 1.900000; transfers 1; score 0.232633333
+  Change (after - before): minutes +0.000000; fare +0; risk +0.000000; transfers +0; score +0.000000000
+Comparison route 6: Foxtrot->Echo on 04A; Echo->Golf on 01A
+  Before: minutes 27.050000; fare PHP 18; risk 6.500000; transfers 1; score 0.263166667
+  After: minutes 27.050000; fare PHP 18; risk 6.500000; transfers 1; score 0.263166667
+  Change (after - before): minutes +0.000000; fare +0; risk +0.000000; transfers +0; score +0.000000000
+Explanation: Recommendation changed. Baseline winner: 7.80 minutes, PHP 7, risk 3.70, 0 transfer(s), balanced score 0.085900000. Original winner under S2 is unavailable: The leg must be an OPEN service segment in this network.. Current winner: 23.00 minutes, PHP 14, risk 3.90, 1 transfer(s), balanced score 0.214466667. Balanced is the active objective; lower values rank first. Alternative 1: 29.65 minutes, PHP 14, risk 1.90, 1 transfer(s), balanced score 0.232633333; its primary value 0.232633333 is higher than 0.214466667. Alternative 2: 27.05 minutes, PHP 18, risk 6.50, 1 transfer(s), balanced score 0.263166667; its primary value 0.263166667 is higher than 0.214466667. 
+Event log (source segment changes apply in both directions):
+  Event 1: start -> S1; trigger: Initial baseline calculation
+    Recalculated 3 feasible itinerary/itineraries.
+    No network cost/status changes.
+    Outcome: Found the best feasible route and two distinct alternatives.
+  Event 2: S1 -> S2; trigger: User selected scenario
+    Recalculated 3 feasible itinerary/itineraries.
+    EDGE COSTS row 9 02B: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 17 04A: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 20 04D: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 27 06D: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 30 10C: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 38 11A: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 42 11B: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    Outcome: Recommendation changed. Baseline winner: 7.80 minutes, PHP 7, risk 3.70, 0 transfer(s), balanced score 0.085900000. Original winner under S2 is unavailable: The leg must be an OPEN service segment in this network.. Current winner: 23.00 minutes, PHP 14, risk 3.90, 1 transfer(s), balanced score 0.214466667. Balanced is the active objective; lower values rank first. Alternative 1: 29.65 minutes, PHP 14, risk 1.90, 1 transfer(s), balanced score 0.232633333; its primary value 0.232633333 is higher than 0.214466667. Alternative 2: 27.05 minutes, PHP 18, risk 6.50, 1 transfer(s), balanced score 0.263166667; its primary value 0.263166667 is higher than 0.214466667. 

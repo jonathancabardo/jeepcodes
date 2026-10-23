@@ -1,0 +1,4757 @@
+{
+  "synthetic": true,
+  "checks": [
+    {
+      "id": "A1",
+      "status": "PASS",
+      "detail": "Exact original ordered stops, including leading-zero code."
+    },
+    {
+      "id": "A2",
+      "status": "PASS",
+      "detail": "Unknown code and stop rejected."
+    },
+    {
+      "id": "A3",
+      "status": "PASS",
+      "detail": "Zero-leg query has zero totals."
+    },
+    {
+      "id": "A4",
+      "status": "PASS",
+      "detail": "Three valid affordable baseline itineraries."
+    },
+    {
+      "id": "A5",
+      "status": "PASS",
+      "detail": "Eight source segments slow once; top routes recomputed."
+    },
+    {
+      "id": "A6",
+      "status": "PASS",
+      "detail": "No affordable nonzero trip at budget zero."
+    },
+    {
+      "id": "A7",
+      "status": "PASS",
+      "detail": "Every Foxtrot–Golf service closed both ways."
+    },
+    {
+      "id": "A8",
+      "status": "PASS",
+      "detail": "Alternative leg identities distinct and re-evaluate correctly."
+    },
+    {
+      "id": "A9",
+      "status": "PASS",
+      "detail": "Baseline and ML routes repeat exactly; full seed-42 experiment reproduces saved Step 4 report. S8 remains unresolved separately."
+    },
+    {
+      "id": "A10",
+      "status": "PASS",
+      "detail": "Independent arithmetic on 1,440 saved held-out rows agrees with rerun metrics for both predictors."
+    },
+    {
+      "id": "T01",
+      "status": "PASS",
+      "detail": "Alpha → Golf; Fare; S1; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T02",
+      "status": "PASS",
+      "detail": "Alpha → Romeo; Balanced; S1; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T03",
+      "status": "PASS",
+      "detail": "Juliet → Romeo; Time; S1; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T04",
+      "status": "PASS",
+      "detail": "Alpha → Alpha; Balanced; S1; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T06",
+      "status": "PASS",
+      "detail": "Foxtrot → Romeo; Safety; S1; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T07",
+      "status": "PASS",
+      "detail": "Alpha → Romeo; Balanced; S2; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T08",
+      "status": "PASS",
+      "detail": "Alpha → Romeo; Fare; S5; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T09",
+      "status": "PASS",
+      "detail": "Romeo → Alpha; Balanced; S1; valid paths with requested property. Safety is minimum total synthetic risk, not a ban on particular stops."
+    },
+    {
+      "id": "T05",
+      "status": "PASS",
+      "detail": "Unknown destination rejected."
+    },
+    {
+      "id": "T10",
+      "status": "PASS",
+      "detail": "Isolated disconnected fixture; original workbook unchanged."
+    },
+    {
+      "id": "S1",
+      "status": "PASS",
+      "detail": "Repeated activation stable and reset restores original graph/results; scenario-specific assertions also covered in regression suite."
+    },
+    {
+      "id": "S2",
+      "status": "PASS",
+      "detail": "Repeated activation stable and reset restores original graph/results; scenario-specific assertions also covered in regression suite."
+    },
+    {
+      "id": "S3",
+      "status": "PASS",
+      "detail": "Repeated activation stable and reset restores original graph/results; scenario-specific assertions also covered in regression suite."
+    },
+    {
+      "id": "S5",
+      "status": "PASS",
+      "detail": "Repeated activation stable and reset restores original graph/results; scenario-specific assertions also covered in regression suite."
+    },
+    {
+      "id": "S7",
+      "status": "PASS",
+      "detail": "Repeated activation stable and reset restores original graph/results; scenario-specific assertions also covered in regression suite."
+    },
+    {
+      "id": "S4-guard",
+      "status": "PASS",
+      "detail": "Pending: specify the high-risk objective/weight for Hotel risk 10."
+    },
+    {
+      "id": "S6-guard",
+      "status": "PASS",
+      "detail": "Pending: confirm whether the 42D fare surge includes boarding/transfer charges."
+    },
+    {
+      "id": "S8-guard",
+      "status": "PASS",
+      "detail": "Pending: confirm perturbation distribution and robust ranking criterion."
+    },
+    {
+      "id": "S9-guard",
+      "status": "PASS",
+      "detail": "Pending: specify Kilo congestion and Oscar risk values."
+    },
+    {
+      "id": "CLI-lookup",
+      "status": "PASS",
+      "detail": "Exit 0, expected 0; see lookup.txt."
+    },
+    {
+      "id": "CLI-baseline",
+      "status": "PASS",
+      "detail": "Exit 0, expected 0; see baseline.txt."
+    },
+    {
+      "id": "CLI-delta-reset",
+      "status": "PASS",
+      "detail": "Exit 0, expected 0; see delta-reset.txt."
+    },
+    {
+      "id": "CLI-closure",
+      "status": "PASS",
+      "detail": "Exit 0, expected 0; see closure.txt."
+    },
+    {
+      "id": "CLI-infeasible",
+      "status": "PASS",
+      "detail": "Exit 0, expected 0; see infeasible.txt."
+    },
+    {
+      "id": "CLI-zero",
+      "status": "PASS",
+      "detail": "Exit 0, expected 0; see zero.txt."
+    },
+    {
+      "id": "CLI-unknown",
+      "status": "PASS",
+      "detail": "Exit 2, expected 2; see unknown.txt."
+    },
+    {
+      "id": "CLI-pending",
+      "status": "PASS",
+      "detail": "Exit 2, expected 2; see pending.txt."
+    },
+    {
+      "id": "CLI-ml-comparison",
+      "status": "PASS",
+      "detail": "Exit 0, expected 0; see ml-comparison.txt."
+    },
+    {
+      "id": "source-integrity",
+      "status": "PASS",
+      "detail": "Workbook, Step 4 and Step 5 artifacts unchanged during audit."
+    },
+    {
+      "id": "dependencies",
+      "status": "PASS",
+      "detail": "No broken requirements found."
+    }
+  ],
+  "scenario_status": {
+    "S1": "PASS",
+    "S2": "PASS",
+    "S3": "PASS",
+    "S5": "PASS",
+    "S7": "PASS",
+    "S4": "UNRESOLVED: Pending: specify the high-risk objective/weight for Hotel risk 10.",
+    "S6": "UNRESOLVED: Pending: confirm whether the 42D fare surge includes boarding/transfer charges.",
+    "S8": "UNRESOLVED: Pending: confirm perturbation distribution and robust ranking criterion.",
+    "S9": "UNRESOLVED: Pending: specify Kilo congestion and Oscar risk values."
+  },
+  "queries": {
+    "T01": {
+      "routes": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Bravo",
+              "01A"
+            ],
+            [
+              "Bravo",
+              "Charlie",
+              "01A"
+            ],
+            [
+              "Charlie",
+              "Echo",
+              "01A"
+            ],
+            [
+              "Echo",
+              "Golf",
+              "01A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 14.0,
+            "transfer_fare": 0.0,
+            "driving_minutes": 30.9,
+            "arrival_minutes": 9.0,
+            "transfer_minutes": 0.0,
+            "risk": 12.0,
+            "transfers": 0
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Echo",
+              "02B"
+            ],
+            [
+              "Echo",
+              "Foxtrot",
+              "02B"
+            ],
+            [
+              "Foxtrot",
+              "Golf",
+              "02B"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 14.0,
+            "transfer_fare": 0.0,
+            "driving_minutes": 36.6,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 0.0,
+            "risk": 12.2,
+            "transfers": 0
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Foxtrot",
+              "06D"
+            ],
+            [
+              "Foxtrot",
+              "Golf",
+              "06D"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 12.0,
+            "transfer_fare": 5.0,
+            "driving_minutes": 16.85,
+            "arrival_minutes": 5.0,
+            "transfer_minutes": 8.0,
+            "risk": 14.399999999999999,
+            "transfers": 1
+          }
+        }
+      ],
+      "message": "Found the best feasible route and two distinct alternatives."
+    },
+    "T02": {
+      "routes": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 58.24999999999999,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 63.199999999999996,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 66.35,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          }
+        }
+      ],
+      "message": "Found the best feasible route and two distinct alternatives."
+    },
+    "T03": {
+      "routes": [
+        {
+          "identity": [
+            [
+              "Juliet",
+              "Lima",
+              "10H"
+            ],
+            [
+              "Lima",
+              "Mike",
+              "20C"
+            ],
+            [
+              "Mike",
+              "Romeo",
+              "20C"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 13.0,
+            "transfer_fare": 5.0,
+            "driving_minutes": 24.200000000000003,
+            "arrival_minutes": 3.0,
+            "transfer_minutes": 3.0,
+            "risk": 14.0,
+            "transfers": 1
+          }
+        },
+        {
+          "identity": [
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 9.0,
+            "transfer_fare": 0.0,
+            "driving_minutes": 29.700000000000003,
+            "arrival_minutes": 4.0,
+            "transfer_minutes": 0.0,
+            "risk": 14.1,
+            "transfers": 0
+          }
+        },
+        {
+          "identity": [
+            [
+              "Juliet",
+              "Lima",
+              "10H"
+            ],
+            [
+              "Lima",
+              "Mike",
+              "42C"
+            ],
+            [
+              "Mike",
+              "Romeo",
+              "20C"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 14.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 23.0,
+            "arrival_minutes": 3.0,
+            "transfer_minutes": 8.0,
+            "risk": 8.0,
+            "transfers": 2
+          }
+        }
+      ],
+      "message": "Found the best feasible route and two distinct alternatives."
+    },
+    "T04": {
+      "routes": [
+        {
+          "identity": [],
+          "costs": {
+            "boarding_fare": 0.0,
+            "segment_fare": 0.0,
+            "transfer_fare": 0.0,
+            "driving_minutes": 0.0,
+            "arrival_minutes": 0.0,
+            "transfer_minutes": 0.0,
+            "risk": 0.0,
+            "transfers": 0
+          }
+        }
+      ],
+      "message": "Zero-leg trip: no boarding or travel costs; no alternatives are needed."
+    },
+    "T06": {
+      "routes": [
+        {
+          "identity": [
+            [
+              "Foxtrot",
+              "Hotel",
+              "10H"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "Kilo",
+              "06B"
+            ],
+            [
+              "Kilo",
+              "Mike",
+              "11A"
+            ],
+            [
+              "Mike",
+              "Romeo",
+              "20C"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 20.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 52.9,
+            "arrival_minutes": 8.0,
+            "transfer_minutes": 19.0,
+            "risk": 5.800000000000001,
+            "transfers": 3
+          }
+        },
+        {
+          "identity": [
+            [
+              "Foxtrot",
+              "Hotel",
+              "10H"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "Kilo",
+              "42C"
+            ],
+            [
+              "Kilo",
+              "Mike",
+              "11A"
+            ],
+            [
+              "Mike",
+              "Romeo",
+              "20C"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 56.39999999999999,
+            "arrival_minutes": 8.0,
+            "transfer_minutes": 19.0,
+            "risk": 7.800000000000001,
+            "transfers": 3
+          }
+        },
+        {
+          "identity": [
+            [
+              "Foxtrot",
+              "Hotel",
+              "10H"
+            ],
+            [
+              "Hotel",
+              "Golf",
+              "10C"
+            ],
+            [
+              "Golf",
+              "Kilo",
+              "11A"
+            ],
+            [
+              "Kilo",
+              "Mike",
+              "11A"
+            ],
+            [
+              "Mike",
+              "Romeo",
+              "20C"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 46.699999999999996,
+            "arrival_minutes": 9.0,
+            "transfer_minutes": 14.0,
+            "risk": 9.4,
+            "transfers": 3
+          }
+        }
+      ],
+      "message": "Found the best feasible route and two distinct alternatives."
+    },
+    "T07": {
+      "routes": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 58.24999999999999,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 63.199999999999996,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 66.35,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          }
+        }
+      ],
+      "message": "Found the best feasible route and two distinct alternatives."
+    },
+    "T08": {
+      "routes": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 58.24999999999999,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 63.199999999999996,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          }
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 66.35,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          }
+        }
+      ],
+      "message": "Found the best feasible route and two distinct alternatives."
+    },
+    "T09": {
+      "routes": [
+        {
+          "identity": [
+            [
+              "Romeo",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Juliet",
+              "20A"
+            ],
+            [
+              "Juliet",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Delta",
+              "06B"
+            ],
+            [
+              "Delta",
+              "Alpha",
+              "02B"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 58.25,
+            "arrival_minutes": 5.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.3,
+            "transfers": 2
+          }
+        },
+        {
+          "identity": [
+            [
+              "Romeo",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Juliet",
+              "20A"
+            ],
+            [
+              "Juliet",
+              "Hotel",
+              "10H"
+            ],
+            [
+              "Hotel",
+              "Delta",
+              "06B"
+            ],
+            [
+              "Delta",
+              "Alpha",
+              "02B"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 63.2,
+            "arrival_minutes": 5.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.3,
+            "transfers": 3
+          }
+        },
+        {
+          "identity": [
+            [
+              "Romeo",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Juliet",
+              "42D"
+            ],
+            [
+              "Juliet",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Delta",
+              "06B"
+            ],
+            [
+              "Delta",
+              "Alpha",
+              "02B"
+            ]
+          ],
+          "costs": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 66.35,
+            "arrival_minutes": 9.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.099999999999998,
+            "transfers": 2
+          }
+        }
+      ],
+      "message": "Found the best feasible route and two distinct alternatives."
+    }
+  },
+  "heldout_metrics": {
+    "model_minutes": {
+      "mae": 1.2753811897521141,
+      "rmse": 1.7678349414212633
+    },
+    "naive_minutes": {
+      "mae": 8.27672445922818,
+      "rmse": 11.972220142412764
+    }
+  },
+  "ml_report_matches_saved": true,
+  "ml_study": {
+    "synthetic": true,
+    "query": {
+      "origin": "Alpha",
+      "destination": "Romeo",
+      "preference": "Balanced",
+      "budget": 40.0
+    },
+    "period": "midday",
+    "period_factor": 1.05,
+    "source_sha256": "ba2ae447d1964e5bd0d2d92d89d98b837be28b40a81f9ad1720b5078391eccbf",
+    "model_sha256": "06a8b0f80d0ad44fb1719661bcca31e5ae37d6cdcfaa615b3976bcacbe784b2a",
+    "deterministic_contract": "base * source congestion * period factor * disruption factor; then shared node costs",
+    "ml_contract": "predict with period/disruption inputs; use output once, then shared node costs",
+    "normal_deterministic_vs_ml": {
+      "before_message": "Found the best feasible route and two distinct alternatives.",
+      "after_message": "Found the best feasible route and two distinct alternatives.",
+      "before_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 61.162499999999994,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 81.1625,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.6231416666666666
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 66.36,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 88.36,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.6981333333333333
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 69.66749999999999,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 93.66749999999999,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7139249999999999
+        }
+      ],
+      "after_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 60.34319102557599,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 80.34319102557599,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.62041063675192
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 64.2996746770537,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 86.2996746770537,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.6912655822568456
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 70.04994315570525,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 94.04994315570525,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7151998105190175
+        }
+      ],
+      "winner_changed": false,
+      "winner_metric_deltas_after_minus_before": {
+        "minutes": -0.8193089744240041,
+        "fare": 0.0,
+        "risk": 0.0,
+        "transfers": 0,
+        "score": -0.0027310299147466077
+      },
+      "same_route_comparisons": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 61.162499999999994,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 81.1625,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.6231416666666666
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 60.34319102557599,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 80.34319102557599,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.62041063675192
+          },
+          "deltas_after_minus_before": {
+            "minutes": -0.8193089744240041,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": -0.0027310299147466077
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 66.36,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 88.36,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.6981333333333333
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 64.2996746770537,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 86.2996746770537,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.6912655822568456
+          },
+          "deltas_after_minus_before": {
+            "minutes": -2.060325322946298,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": -0.006867751076487627
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 69.66749999999999,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 93.66749999999999,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7139249999999999
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 70.04994315570525,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 94.04994315570525,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7151998105190175
+          },
+          "deltas_after_minus_before": {
+            "minutes": 0.38244315570526055,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.0012748105190175663
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        }
+      ],
+      "explanation": "Recommendation unchanged. Baseline winner: 81.16 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.623141667. Original winner under S1 ML: 80.34 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.620410637. Current winner: 80.34 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.620410637. Balanced is the active objective; lower values rank first. Alternative 1: 86.30 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.691265582; its primary value 0.691265582 is higher than 0.620410637. Alternative 2: 94.05 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.715199811; its primary value 0.715199811 is higher than 0.620410637. "
+    },
+    "delta_deterministic_vs_ml": {
+      "before_message": "Found the best feasible route and two distinct alternatives.",
+      "after_message": "Found the best feasible route and two distinct alternatives.",
+      "before_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 86.205,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 106.205,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.7066166666666667
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 91.4025,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 113.4025,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.7816083333333333
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 94.71,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 118.71,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7974
+        }
+      ],
+      "after_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 85.1114918863543,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 105.1114918863543,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.702971639621181
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 89.067975537832,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 111.067975537832,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.7738265851261067
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 94.81824401648353,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 118.81824401648353,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7977608133882784
+        }
+      ],
+      "winner_changed": false,
+      "winner_metric_deltas_after_minus_before": {
+        "minutes": -1.0935081136456972,
+        "fare": 0.0,
+        "risk": 0.0,
+        "transfers": 0,
+        "score": -0.003645027045485638
+      },
+      "same_route_comparisons": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 86.205,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 106.205,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.7066166666666667
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 85.1114918863543,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 105.1114918863543,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.702971639621181
+          },
+          "deltas_after_minus_before": {
+            "minutes": -1.0935081136456972,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": -0.003645027045485638
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 91.4025,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 113.4025,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.7816083333333333
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 89.067975537832,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 111.067975537832,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.7738265851261067
+          },
+          "deltas_after_minus_before": {
+            "minutes": -2.3345244621680052,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": -0.0077817482072266575
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 94.71,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 118.71,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7974
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 94.81824401648353,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 118.81824401648353,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7977608133882784
+          },
+          "deltas_after_minus_before": {
+            "minutes": 0.10824401648353899,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.0003608133882784248
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        }
+      ],
+      "explanation": "Recommendation unchanged. Baseline winner: 106.20 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.706616667. Original winner under S3 ML: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Current winner: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Balanced is the active objective; lower values rank first. Alternative 1: 111.07 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.773826585; its primary value 0.773826585 is higher than 0.702971640. Alternative 2: 118.82 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.797760813; its primary value 0.797760813 is higher than 0.702971640. "
+    },
+    "deterministic_normal_vs_delta": {
+      "before_message": "Found the best feasible route and two distinct alternatives.",
+      "after_message": "Found the best feasible route and two distinct alternatives.",
+      "before_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 61.162499999999994,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 81.1625,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.6231416666666666
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 66.36,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 88.36,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.6981333333333333
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 69.66749999999999,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 93.66749999999999,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7139249999999999
+        }
+      ],
+      "after_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 86.205,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 106.205,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.7066166666666667
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 91.4025,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 113.4025,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.7816083333333333
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 94.71,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 118.71,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7974
+        }
+      ],
+      "winner_changed": false,
+      "winner_metric_deltas_after_minus_before": {
+        "minutes": 25.042500000000004,
+        "fare": 0.0,
+        "risk": 0.0,
+        "transfers": 0,
+        "score": 0.08347500000000008
+      },
+      "same_route_comparisons": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 61.162499999999994,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 81.1625,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.6231416666666666
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 86.205,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 106.205,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.7066166666666667
+          },
+          "deltas_after_minus_before": {
+            "minutes": 25.042500000000004,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.08347500000000008
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 66.36,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 88.36,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.6981333333333333
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 91.4025,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 113.4025,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.7816083333333333
+          },
+          "deltas_after_minus_before": {
+            "minutes": 25.042500000000004,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.08347500000000008
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 69.66749999999999,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 93.66749999999999,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7139249999999999
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 94.71,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 118.71,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7974
+          },
+          "deltas_after_minus_before": {
+            "minutes": 25.042500000000004,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.08347500000000008
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        }
+      ],
+      "explanation": "Recommendation unchanged. Baseline winner: 81.16 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.623141667. Original winner under S3 deterministic: 106.20 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.706616667. Current winner: 106.20 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.706616667. Balanced is the active objective; lower values rank first. Alternative 1: 113.40 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.781608333; its primary value 0.781608333 is higher than 0.706616667. Alternative 2: 118.71 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.797400000; its primary value 0.797400000 is higher than 0.706616667. "
+    },
+    "ml_normal_vs_delta": {
+      "before_message": "Found the best feasible route and two distinct alternatives.",
+      "after_message": "Found the best feasible route and two distinct alternatives.",
+      "before_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 60.34319102557599,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 80.34319102557599,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.62041063675192
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 64.2996746770537,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 86.2996746770537,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.6912655822568456
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 70.04994315570525,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 94.04994315570525,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7151998105190175
+        }
+      ],
+      "after_ranked_routes": [
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 19.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 85.1114918863543,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 14.0,
+            "risk": 23.799999999999997,
+            "transfers": 2
+          },
+          "minutes": 105.1114918863543,
+          "fare": 34.0,
+          "risk": 23.799999999999997,
+          "transfers": 2,
+          "balanced_score": 0.702971639621181
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Papa",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 18.0,
+            "transfer_fare": 15.0,
+            "driving_minutes": 89.067975537832,
+            "arrival_minutes": 6.0,
+            "transfer_minutes": 16.0,
+            "risk": 21.799999999999997,
+            "transfers": 3
+          },
+          "minutes": 111.067975537832,
+          "fare": 38.0,
+          "risk": 21.799999999999997,
+          "transfers": 3,
+          "balanced_score": 0.7738265851261067
+        },
+        {
+          "stops": [
+            "Alpha",
+            "Delta",
+            "Hotel",
+            "Juliet",
+            "November",
+            "Oscar",
+            "Quebec",
+            "Romeo"
+          ],
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "cost_components": {
+            "boarding_fare": 5.0,
+            "segment_fare": 24.0,
+            "transfer_fare": 10.0,
+            "driving_minutes": 94.81824401648353,
+            "arrival_minutes": 10.0,
+            "transfer_minutes": 14.0,
+            "risk": 29.6,
+            "transfers": 2
+          },
+          "minutes": 118.81824401648353,
+          "fare": 39.0,
+          "risk": 29.6,
+          "transfers": 2,
+          "balanced_score": 0.7977608133882784
+        }
+      ],
+      "winner_changed": false,
+      "winner_metric_deltas_after_minus_before": {
+        "minutes": 24.76830086077831,
+        "fare": 0.0,
+        "risk": 0.0,
+        "transfers": 0,
+        "score": 0.08256100286926105
+      },
+      "same_route_comparisons": [
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 60.34319102557599,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 80.34319102557599,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.62041063675192
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 19.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 85.1114918863543,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 14.0,
+              "risk": 23.799999999999997,
+              "transfers": 2
+            },
+            "minutes": 105.1114918863543,
+            "fare": 34.0,
+            "risk": 23.799999999999997,
+            "transfers": 2,
+            "balanced_score": 0.702971639621181
+          },
+          "deltas_after_minus_before": {
+            "minutes": 24.76830086077831,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.08256100286926105
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "10H"
+            ],
+            [
+              "Juliet",
+              "November",
+              "20A"
+            ],
+            [
+              "November",
+              "Papa",
+              "20A"
+            ],
+            [
+              "Papa",
+              "Romeo",
+              "20A"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 64.2996746770537,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 86.2996746770537,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.6912655822568456
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Papa",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "10H"
+              ],
+              [
+                "Juliet",
+                "November",
+                "20A"
+              ],
+              [
+                "November",
+                "Papa",
+                "20A"
+              ],
+              [
+                "Papa",
+                "Romeo",
+                "20A"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 18.0,
+              "transfer_fare": 15.0,
+              "driving_minutes": 89.067975537832,
+              "arrival_minutes": 6.0,
+              "transfer_minutes": 16.0,
+              "risk": 21.799999999999997,
+              "transfers": 3
+            },
+            "minutes": 111.067975537832,
+            "fare": 38.0,
+            "risk": 21.799999999999997,
+            "transfers": 3,
+            "balanced_score": 0.7738265851261067
+          },
+          "deltas_after_minus_before": {
+            "minutes": 24.768300860778297,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.08256100286926105
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        },
+        {
+          "identity": [
+            [
+              "Alpha",
+              "Delta",
+              "02B"
+            ],
+            [
+              "Delta",
+              "Hotel",
+              "06B"
+            ],
+            [
+              "Hotel",
+              "Juliet",
+              "06B"
+            ],
+            [
+              "Juliet",
+              "November",
+              "42D"
+            ],
+            [
+              "November",
+              "Oscar",
+              "42D"
+            ],
+            [
+              "Oscar",
+              "Quebec",
+              "42D"
+            ],
+            [
+              "Quebec",
+              "Romeo",
+              "42D"
+            ]
+          ],
+          "before": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 70.04994315570525,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 94.04994315570525,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7151998105190175
+          },
+          "after": {
+            "stops": [
+              "Alpha",
+              "Delta",
+              "Hotel",
+              "Juliet",
+              "November",
+              "Oscar",
+              "Quebec",
+              "Romeo"
+            ],
+            "identity": [
+              [
+                "Alpha",
+                "Delta",
+                "02B"
+              ],
+              [
+                "Delta",
+                "Hotel",
+                "06B"
+              ],
+              [
+                "Hotel",
+                "Juliet",
+                "06B"
+              ],
+              [
+                "Juliet",
+                "November",
+                "42D"
+              ],
+              [
+                "November",
+                "Oscar",
+                "42D"
+              ],
+              [
+                "Oscar",
+                "Quebec",
+                "42D"
+              ],
+              [
+                "Quebec",
+                "Romeo",
+                "42D"
+              ]
+            ],
+            "cost_components": {
+              "boarding_fare": 5.0,
+              "segment_fare": 24.0,
+              "transfer_fare": 10.0,
+              "driving_minutes": 94.81824401648353,
+              "arrival_minutes": 10.0,
+              "transfer_minutes": 14.0,
+              "risk": 29.6,
+              "transfers": 2
+            },
+            "minutes": 118.81824401648353,
+            "fare": 39.0,
+            "risk": 29.6,
+            "transfers": 2,
+            "balanced_score": 0.7977608133882784
+          },
+          "deltas_after_minus_before": {
+            "minutes": 24.768300860778282,
+            "fare": 0.0,
+            "risk": 0.0,
+            "transfers": 0,
+            "score": 0.08256100286926094
+          },
+          "before_unavailable": "",
+          "after_unavailable": ""
+        }
+      ],
+      "explanation": "Recommendation unchanged. Baseline winner: 80.34 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.620410637. Original winner under S3 ML: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Current winner: 105.11 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.702971640. Balanced is the active objective; lower values rank first. Alternative 1: 111.07 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.773826585; its primary value 0.773826585 is higher than 0.702971640. Alternative 2: 118.82 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.797760813; its primary value 0.797760813 is higher than 0.702971640. "
+    },
+    "limitations": [
+      "Predictions are learned from synthetic classroom data, not real traffic.",
+      "ML-vs-deterministic deltas compare estimates; they are not measured time savings.",
+      "The Step 4 holdout model is reused unchanged; no retraining or new accuracy claim.",
+      "An ML Delta prediction need not be exactly 2.5 times its normal prediction."
+    ]
+  },
+  "protected_sha256": {
+    "C:\\Users\\noname\\Documents\\DIT\\DIT837-EmergingTech\\JeepCodes\\JeepCodes_2_AI_Route_Challenge.xlsx": "ba2ae447d1964e5bd0d2d92d89d98b837be28b40a81f9ad1720b5078391eccbf",
+    "artifacts\\step4-ml\\evaluation.json": "4618f0140e22c5515244467c4bc5494b8205c88f607fcd53a04ea4cd9fee2e8a",
+    "artifacts\\step4-ml\\heldout_predictions.csv": "4693fc726f3e8247e803564799fcdd5686591c1e29fb871722ff62ce4ceba040",
+    "artifacts\\step4-ml\\model.joblib": "06a8b0f80d0ad44fb1719661bcca31e5ae37d6cdcfaa615b3976bcacbe784b2a",
+    "artifacts\\step4-ml\\synthetic_observations.csv": "75a29fca511393a8dd16cfc3ddd7b2a0c5ac4d02919e94de1e3fa8829d1f3c10",
+    "artifacts\\step5-routing\\comparison.json": "4142b8e63e82716ce940eef4a6c39f2fe927aceac4a0bc0fa8309344210f923d"
+  },
+  "versions": {
+    "python": "3.13.7",
+    "openpyxl": "3.1.5",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "streamlit": "1.66.0",
+    "pandas": "3.0.6"
+  },
+  "cli": [
+    {
+      "name": "lookup",
+      "args": [
+        "--code",
+        "01A"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "baseline",
+      "args": [
+        "--origin",
+        "Alpha",
+        "--destination",
+        "Romeo"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "delta-reset",
+      "args": [
+        "--scenario",
+        "S3",
+        "--reset"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "closure",
+      "args": [
+        "--scenario",
+        "S2"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "infeasible",
+      "args": [
+        "--origin",
+        "Alpha",
+        "--destination",
+        "Romeo",
+        "--budget",
+        "0"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "zero",
+      "args": [
+        "--origin",
+        "Alpha",
+        "--destination",
+        "Alpha",
+        "--budget",
+        "0"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "unknown",
+      "args": [
+        "--destination",
+        "Atlantis"
+      ],
+      "exit_code": 2
+    },
+    {
+      "name": "pending",
+      "args": [
+        "--scenario",
+        "S9"
+      ],
+      "exit_code": 2
+    },
+    {
+      "name": "ml-comparison",
+      "args": [
+        "--ml-routes"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "failed": 0,
+  "unresolved": [
+    "S4",
+    "S6",
+    "S8",
+    "S9"
+  ],
+  "not_performed": [
+    "Instructor acceptance",
+    "Mobile browser inspection",
+    "Public deployment"
+  ]
+}

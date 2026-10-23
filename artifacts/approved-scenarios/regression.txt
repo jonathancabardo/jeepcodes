@@ -1,0 +1,100 @@
+test_all_approved_assumptions_logged_and_reset (test_approved_scenarios.ApprovedScenarioTests.test_all_approved_assumptions_logged_and_reset) ... ok
+test_s4_separate_score_and_exact_ranking (test_approved_scenarios.ApprovedScenarioTests.test_s4_separate_score_and_exact_ranking) ... ok
+test_s6_only_segment_fares_and_budget_repricing (test_approved_scenarios.ApprovedScenarioTests.test_s6_only_segment_fares_and_budget_repricing) ... ok
+test_s8_exact_top_three_mean_and_independent_time_variation (test_approved_scenarios.ApprovedScenarioTests.test_s8_exact_top_three_mean_and_independent_time_variation) ... ok
+test_s8_seed_range_order_and_shared_reverse_draws (test_approved_scenarios.ApprovedScenarioTests.test_s8_seed_range_order_and_shared_reverse_draws) ... ok
+test_s8_zero_trip_infeasible_and_repeat_reset (test_approved_scenarios.ApprovedScenarioTests.test_s8_zero_trip_infeasible_and_repeat_reset) ... ok
+test_s9_closure_kilo_driving_and_oscar_arrival_risk (test_approved_scenarios.ApprovedScenarioTests.test_s9_closure_kilo_driving_and_oscar_arrival_risk) ... ok
+test_A1_exact_code_lookup (test_data.SourceAcceptanceTests.test_A1_exact_code_lookup) ... ok
+test_A2_cli_rejects_unknown_code_and_stop_without_traceback (test_data.SourceAcceptanceTests.test_A2_cli_rejects_unknown_code_and_stop_without_traceback) ... ok
+test_all_source_fields_retained (test_data.SourceAcceptanceTests.test_all_source_fields_retained) ... ok
+test_cli_success_and_source_row_display (test_data.SourceAcceptanceTests.test_cli_success_and_source_row_display) ... ok
+test_counts_and_fingerprint (test_data.SourceAcceptanceTests.test_counts_and_fingerprint) ... ok
+test_malformed_archive_and_xml_have_actionable_errors (test_data.SourceAcceptanceTests.test_malformed_archive_and_xml_have_actionable_errors) ... ok
+test_wrong_fingerprint_rejected (test_data.SourceAcceptanceTests.test_wrong_fingerprint_rejected) ... ok
+test_closed_segment_excluded_in_both_directions (test_data.ValidationTests.test_closed_segment_excluded_in_both_directions) ... ok
+test_immutable_data (test_data.ValidationTests.test_immutable_data) ... ok
+test_invalid_numbers (test_data.ValidationTests.test_invalid_numbers) ... ok
+test_missing_file_has_actionable_error (test_data.ValidationTests.test_missing_file_has_actionable_error) ... ok
+test_named_headers_can_be_reordered_and_trailing_blanks_ignored (test_data.ValidationTests.test_named_headers_can_be_reordered_and_trailing_blanks_ignored) ... ok
+test_parallel_edges_and_source_identity (test_data.ValidationTests.test_parallel_edges_and_source_identity) ... ok
+test_risk_and_congestion_index_limits (test_data.ValidationTests.test_risk_and_congestion_index_limits) ... ok
+test_schema_and_network_integrity (test_data.ValidationTests.test_schema_and_network_integrity) ... ok
+test_unknown_code_and_stop (test_data.ValidationTests.test_unknown_code_and_stop) ... ok
+test_zero_numeric_costs_allowed (test_data.ValidationTests.test_zero_numeric_costs_allowed) ... ok
+test_changing_heldout_targets_does_not_change_model_predictions (test_ml.MLTests.test_changing_heldout_targets_does_not_change_model_predictions) ... ok
+test_cli_runs_evaluation_and_rejects_mixed_or_invalid_options (test_ml.MLTests.test_cli_runs_evaluation_and_rejects_mixed_or_invalid_options) ... ok
+test_config_and_source_validation (test_ml.MLTests.test_config_and_source_validation) ... ok
+test_export_contains_auditable_dataset_predictions_model_and_report (test_ml.MLTests.test_export_contains_auditable_dataset_predictions_model_and_report) ... ok
+test_group_split_complete_disjoint_and_bidirectional_identity (test_ml.MLTests.test_group_split_complete_disjoint_and_bidirectional_identity) ... ok
+test_metric_validation_and_known_example (test_ml.MLTests.test_metric_validation_and_known_example) ... ok
+test_metrics_match_independent_arithmetic_on_same_heldout_rows (test_ml.MLTests.test_metrics_match_independent_arithmetic_on_same_heldout_rows) ... ok
+test_recipe_cardinality_ranges_and_features (test_ml.MLTests.test_recipe_cardinality_ranges_and_features) ... ok
+test_seed_reproduces_data_split_predictions_and_report (test_ml.MLTests.test_seed_reproduces_data_split_predictions_and_report) ... ok
+test_zero_base_time_and_zero_noise (test_ml.MLTests.test_zero_base_time_and_zero_noise) ... ok
+test_all_conditions_use_same_query_and_preserve_fare_risk_node_costs (test_ml_routing.MLRoutingTests.test_all_conditions_use_same_query_and_preserve_fare_risk_node_costs) ... ok
+test_invalid_predictions_are_rejected_without_fallback_or_clipping (test_ml_routing.MLRoutingTests.test_invalid_predictions_are_rejected_without_fallback_or_clipping) ... ok
+test_model_estimates_can_change_winner_and_comparison_explains_it (test_ml_routing.MLRoutingTests.test_model_estimates_can_change_winner_and_comparison_explains_it) ... ok
+test_model_unavailable_bad_fingerprint_schema_and_source (test_ml_routing.MLRoutingTests.test_model_unavailable_bad_fingerprint_schema_and_source) ... ok
+test_new_output_directory_and_cli_controls (test_ml_routing.MLRoutingTests.test_new_output_directory_and_cli_controls) ... ok
+test_prediction_features_match_training_schema_without_noise_or_node_costs (test_ml_routing.MLRoutingTests.test_prediction_features_match_training_schema_without_noise_or_node_costs) ... ok
+test_real_predictions_used_directly_in_both_directions (test_ml_routing.MLRoutingTests.test_real_predictions_used_directly_in_both_directions) ... ok
+test_report_deltas_and_reproducibility (test_ml_routing.MLRoutingTests.test_report_deltas_and_reproducibility) ... ok
+test_same_calculator_exact_conditions_and_no_double_disruption (test_ml_routing.MLRoutingTests.test_same_calculator_exact_conditions_and_no_double_disruption) ... ok
+test_search_matches_independent_oracle_with_prediction_overrides (test_ml_routing.MLRoutingTests.test_search_matches_independent_oracle_with_prediction_overrides) ... ok
+test_zero_trip_infeasible_budget_cap_and_unknown_inputs (test_ml_routing.MLRoutingTests.test_zero_trip_infeasible_budget_cap_and_unknown_inputs) ... ok
+test_calculator_rejects_disconnected_repeated_and_foreign_legs (test_routing.RoutingTests.test_calculator_rejects_disconnected_repeated_and_foreign_legs) ... ok
+test_competing_labels_to_same_stop_and_service_survive (test_routing.RoutingTests.test_competing_labels_to_same_stop_and_service_survive) ... ok
+test_disconnection_closed_reverse_and_fewer_alternatives (test_routing.RoutingTests.test_disconnection_closed_reverse_and_fewer_alternatives) ... ok
+test_fixed_score_scales_and_numeric_overflow (test_routing.RoutingTests.test_fixed_score_scales_and_numeric_overflow) ... ok
+test_search_matches_independent_exhaustive_oracle (test_routing.RoutingTests.test_search_matches_independent_exhaustive_oracle) ... ok
+test_zero_cost_ties_are_lexicographic_and_order_independent (test_routing.RoutingTests.test_zero_cost_ties_are_lexicographic_and_order_independent) ... ok
+test_zero_trip_budget_validation_cap_and_infeasibility (test_routing.RoutingTests.test_zero_trip_budget_validation_cap_and_infeasibility) ... ok
+test_boarding_same_service_and_transfer (test_routing.WorkbookRoutingTests.test_boarding_same_service_and_transfer) ... ok
+test_cli_omitted_endpoints_still_use_defaults (test_routing.WorkbookRoutingTests.test_cli_omitted_endpoints_still_use_defaults) ... ok
+test_cli_route_breakdown_and_invalid_requests (test_routing.WorkbookRoutingTests.test_cli_route_breakdown_and_invalid_requests) ... ok
+test_hand_calculated_leg_and_directional_arrivals (test_routing.WorkbookRoutingTests.test_hand_calculated_leg_and_directional_arrivals) ... ok
+test_workbook_baseline_properties_and_reproducibility (test_routing.WorkbookRoutingTests.test_workbook_baseline_properties_and_reproducibility) ... ok
+test_baseline_idempotence_switching_reset_and_history (test_scenarios.ScenarioTests.test_baseline_idempotence_switching_reset_and_history) ... ok
+test_changed_and_unchanged_winner_explanations (test_scenarios.ScenarioTests.test_changed_and_unchanged_winner_explanations) ... ok
+test_cli_comparison_log_reset_and_pending_list (test_scenarios.ScenarioTests.test_cli_comparison_log_reset_and_pending_list) ... ok
+test_closure_all_parallel_services_both_directions (test_scenarios.ScenarioTests.test_closure_all_parallel_services_both_directions) ... ok
+test_delta_exact_adjustment_once_in_both_directions (test_scenarios.ScenarioTests.test_delta_exact_adjustment_once_in_both_directions) ... ok
+test_do_not_apply_overlay_to_active_scenario (test_scenarios.ScenarioTests.test_do_not_apply_overlay_to_active_scenario) ... ok
+test_old_winner_and_union_recomputed_under_both_conditions (test_scenarios.ScenarioTests.test_old_winner_and_union_recomputed_under_both_conditions) ... ok
+test_outage_respects_service_identity (test_scenarios.ScenarioTests.test_outage_respects_service_identity) ... ok
+test_pending_unknown_and_bad_trigger_do_not_change_session (test_scenarios.ScenarioTests.test_pending_unknown_and_bad_trigger_do_not_change_session) ... ok
+test_reset_from_every_scenario_restores_all_values (test_scenarios.ScenarioTests.test_reset_from_every_scenario_restores_all_values) ... ok
+test_s7_transfer_costs_and_hard_constraint (test_scenarios.ScenarioTests.test_s7_transfer_costs_and_hard_constraint) ... ok
+test_search_matches_independent_oracle_under_each_scenario (test_scenarios.ScenarioTests.test_search_matches_independent_oracle_under_each_scenario) ... ok
+test_zero_trip_and_infeasibility_compare_without_fabricating (test_scenarios.ScenarioTests.test_zero_trip_and_infeasibility_compare_without_fabricating) ... ok
+test_approved_scenarios_display_results_assumptions_and_reset (test_web.WebTests.test_approved_scenarios_display_results_assumptions_and_reset) ... 2026-10-17 11:13:30.477 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_defaults_recommendation_and_three_routes (test_web.WebTests.test_defaults_recommendation_and_three_routes) ... 2026-10-17 11:13:38.718 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_draft_input_hides_old_results_and_does_not_create_event (test_web.WebTests.test_draft_input_hides_old_results_and_does_not_create_event) ... 2026-10-17 11:13:40.028 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_fewer_alternatives_and_disconnected_network (test_web.WebTests.test_fewer_alternatives_and_disconnected_network) ... 2026-10-17 11:13:42.159 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-17 11:13:42.514 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_invalid_budget_keeps_values_and_retry_works (test_web.WebTests.test_invalid_budget_keeps_values_and_retry_works) ... 2026-10-17 11:13:42.735 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_missing_workbook_can_be_retried (test_web.WebTests.test_missing_workbook_can_be_retried) ... 2026-10-17 11:13:44.406 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_ml_comparison_has_matched_conditions_and_preserves_selection (test_web.WebTests.test_ml_comparison_has_matched_conditions_and_preserves_selection) ... 2026-10-17 11:13:45.206 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_s7_restriction_and_unsupported_ml_comparison_are_clear (test_web.WebTests.test_s7_restriction_and_unsupported_ml_comparison_are_clear) ... 2026-10-17 11:13:49.671 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_scenario_persists_no_compounding_and_reset_restores (test_web.WebTests.test_scenario_persists_no_compounding_and_reset_restores) ... 2026-10-17 11:13:50.630 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_unavailable_ml_is_explicit_and_workbook_results_are_distinct (test_web.WebTests.test_unavailable_ml_is_explicit_and_workbook_results_are_distinct) ... 2026-10-17 11:13:52.691 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_unknown_code_lookup_and_exact_order (test_web.WebTests.test_unknown_code_lookup_and_exact_order) ... 2026-10-17 11:13:53.718 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_zero_trip_and_zero_budget_infeasibility (test_web.WebTests.test_zero_trip_and_zero_budget_infeasibility) ... 2026-10-17 11:13:54.534 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 82 tests in 71.248s
+
+OK

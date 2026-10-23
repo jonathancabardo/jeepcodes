@@ -1,0 +1,116 @@
+JeepCodes 2.0 - SYNTHETIC classroom data
+Workbook: C:\Users\noname\Documents\DIT\DIT837-EmergingTech\JeepCodes\JeepCodes_2_AI_Route_Challenge.xlsx
+SHA-256: ba2ae447d1964e5bd0d2d92d89d98b837be28b40a81f9ad1720b5078391eccbf
+Stops: 18
+Services: 15
+Source service segments: 60
+Directed adjacency entries: 120
+Stored baseline search: Alpha -> Romeo
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 34.000000; minutes 78.250000; synthetic risk 23.800000; transfers 2; balanced score 0.613433333
+  Fare breakdown: boarding 5 + segments 19 + transfers 10
+  Minutes breakdown: driving 58.25 + arrivals 6 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.260833333, 0.255000000, 0.047600000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 6.9, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 14.65, risk 5.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 22.3, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 5.8, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 11.6, risk 7.6
+Alternative 1: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 38.000000; minutes 85.200000; synthetic risk 21.800000; transfers 3; balanced score 0.687600000
+  Fare breakdown: boarding 5 + segments 18 + transfers 15
+  Minutes breakdown: driving 63.2 + arrivals 6 + transfers 16
+  Score parts (time, fare, risk, transfers): 0.284000000, 0.285000000, 0.043600000, 0.075000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 6.9, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17, risk 2.2
+    Hotel -> Juliet: 10H (EDGE COSTS row 35); fare 8, minutes 21.6, risk 3.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 22.3, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 5.8, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 11.6, risk 7.6
+Alternative 2: Alpha -> Delta -> Hotel -> Juliet -> November -> Oscar -> Quebec -> Romeo
+  Fare PHP 39.000000; minutes 90.350000; synthetic risk 29.600000; transfers 2; balanced score 0.702866667
+  Fare breakdown: boarding 5 + segments 24 + transfers 10
+  Minutes breakdown: driving 66.35 + arrivals 10 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.301166667, 0.292500000, 0.059200000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 6.9, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 14.65, risk 5.1
+    Juliet -> November: 42D (EDGE COSTS row 58); fare 9, minutes 22.4, risk 4.8
+    November -> Oscar: 42D (EDGE COSTS row 59); fare 5, minutes 14, risk 7.3
+    Oscar -> Quebec: 42D (EDGE COSTS row 60); fare 2, minutes 5.6, risk 2.2
+    Quebec -> Romeo: 42D (EDGE COSTS row 61); fare 3, minutes 9.8, risk 5.6
+Expanded path labels: 2433
+Scenario S2: Alpha -> Romeo
+Objective (Balanced): Minimize 0.40*time/120 + 0.30*fare/40 + 0.20*risk/100 + 0.10*transfers/4.
+Ties: balanced score, minutes, fare, risk, transfers, then lexicographic leg identity (duplicate fields omitted).
+Entered budget: PHP 40; effective budget: PHP 40
+Found the best feasible route and two distinct alternatives.
+Recommendation: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 34.000000; minutes 78.250000; synthetic risk 23.800000; transfers 2; balanced score 0.613433333
+  Fare breakdown: boarding 5 + segments 19 + transfers 10
+  Minutes breakdown: driving 58.25 + arrivals 6 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.260833333, 0.255000000, 0.047600000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 6.9, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 14.65, risk 5.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 22.3, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 5.8, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 11.6, risk 7.6
+Alternative 1: Alpha -> Delta -> Hotel -> Juliet -> November -> Papa -> Romeo
+  Fare PHP 38.000000; minutes 85.200000; synthetic risk 21.800000; transfers 3; balanced score 0.687600000
+  Fare breakdown: boarding 5 + segments 18 + transfers 15
+  Minutes breakdown: driving 63.2 + arrivals 6 + transfers 16
+  Score parts (time, fare, risk, transfers): 0.284000000, 0.285000000, 0.043600000, 0.075000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 6.9, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17, risk 2.2
+    Hotel -> Juliet: 10H (EDGE COSTS row 35); fare 8, minutes 21.6, risk 3.1
+    Juliet -> November: 20A (EDGE COSTS row 47); fare 7, minutes 22.3, risk 1.8
+    November -> Papa: 20A (EDGE COSTS row 48); fare 3, minutes 5.8, risk 4.7
+    Papa -> Romeo: 20A (EDGE COSTS row 49); fare 4, minutes 11.6, risk 7.6
+Alternative 2: Alpha -> Delta -> Hotel -> Juliet -> November -> Oscar -> Quebec -> Romeo
+  Fare PHP 39.000000; minutes 90.350000; synthetic risk 29.600000; transfers 2; balanced score 0.702866667
+  Fare breakdown: boarding 5 + segments 24 + transfers 10
+  Minutes breakdown: driving 66.35 + arrivals 10 + transfers 14
+  Score parts (time, fare, risk, transfers): 0.301166667, 0.292500000, 0.059200000, 0.050000000
+    Alpha -> Delta: 02B (EDGE COSTS row 6); fare 8, minutes 6.9, risk 2.4
+    Delta -> Hotel: 06B (EDGE COSTS row 22); fare 8, minutes 17, risk 2.2
+    Hotel -> Juliet: 06B (EDGE COSTS row 23); fare 4, minutes 14.65, risk 5.1
+    Juliet -> November: 42D (EDGE COSTS row 58); fare 9, minutes 22.4, risk 4.8
+    November -> Oscar: 42D (EDGE COSTS row 59); fare 5, minutes 14, risk 7.3
+    Oscar -> Quebec: 42D (EDGE COSTS row 60); fare 2, minutes 5.6, risk 2.2
+    Quebec -> Romeo: 42D (EDGE COSTS row 61); fare 3, minutes 9.8, risk 5.6
+Expanded path labels: 1049
+Before/after comparison: S1 -> S2
+Comparison route 1: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 06B; Juliet->November on 20A; November->Papa on 20A; Papa->Romeo on 20A
+  Before: minutes 78.250000; fare PHP 34; risk 23.800000; transfers 2; score 0.613433333
+  After: minutes 78.250000; fare PHP 34; risk 23.800000; transfers 2; score 0.613433333
+  Change (after - before): minutes +0.000000; fare +0; risk +0.000000; transfers +0; score +0.000000000
+Comparison route 2: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 10H; Juliet->November on 20A; November->Papa on 20A; Papa->Romeo on 20A
+  Before: minutes 85.200000; fare PHP 38; risk 21.800000; transfers 3; score 0.687600000
+  After: minutes 85.200000; fare PHP 38; risk 21.800000; transfers 3; score 0.687600000
+  Change (after - before): minutes +0.000000; fare +0; risk +0.000000; transfers +0; score +0.000000000
+Comparison route 3: Alpha->Delta on 02B; Delta->Hotel on 06B; Hotel->Juliet on 06B; Juliet->November on 42D; November->Oscar on 42D; Oscar->Quebec on 42D; Quebec->Romeo on 42D
+  Before: minutes 90.350000; fare PHP 39; risk 29.600000; transfers 2; score 0.702866667
+  After: minutes 90.350000; fare PHP 39; risk 29.600000; transfers 2; score 0.702866667
+  Change (after - before): minutes +0.000000; fare +0; risk +0.000000; transfers +0; score +0.000000000
+Explanation: Recommendation unchanged. Baseline winner: 78.25 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.613433333. Original winner under S2: 78.25 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.613433333. Current winner: 78.25 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.613433333. Balanced is the active objective; lower values rank first. Alternative 1: 85.20 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.687600000; its primary value 0.687600000 is higher than 0.613433333. Alternative 2: 90.35 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.702866667; its primary value 0.702866667 is higher than 0.613433333. 
+Event log (source segment changes apply in both directions):
+  Event 1: start -> S1; trigger: Initial baseline calculation
+    Recalculated 3 feasible itinerary/itineraries.
+    No network cost/status changes.
+    Outcome: Found the best feasible route and two distinct alternatives.
+  Event 2: S1 -> S2; trigger: User selected scenario
+    Recalculated 3 feasible itinerary/itineraries.
+    EDGE COSTS row 9 02B: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 17 04A: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 20 04D: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 27 06D: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 30 10C: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 38 11A: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    EDGE COSTS row 42 11B: Foxtrot <-> Golf; status: OPEN -> CLOSED
+    Outcome: Recommendation unchanged. Baseline winner: 78.25 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.613433333. Original winner under S2: 78.25 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.613433333. Current winner: 78.25 minutes, PHP 34, risk 23.80, 2 transfer(s), balanced score 0.613433333. Balanced is the active objective; lower values rank first. Alternative 1: 85.20 minutes, PHP 38, risk 21.80, 3 transfer(s), balanced score 0.687600000; its primary value 0.687600000 is higher than 0.613433333. Alternative 2: 90.35 minutes, PHP 39, risk 29.60, 2 transfer(s), balanced score 0.702866667; its primary value 0.702866667 is higher than 0.613433333. 
