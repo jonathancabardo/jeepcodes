@@ -2,7 +2,9 @@
 
 ## Description
 
-A Python web app that finds jeepney routes within a ₱40 budget. It compares travel time, fare, risk and transfers, shows alternatives and route graphs, and demonstrates disruptions and ML travel-time predictions using synthetic classroom data.
+An assignment for **DIT837-Emerging Technologies 1**, taught by **Eugene C. Busico**.
+
+A Python web app that finds jeepney routes within a user-specified fare budget. It compares travel time, fare, risk and transfers, shows alternatives and route graphs, and demonstrates disruptions and ML travel-time predictions using synthetic classroom data.
 
 ## Installation
 
